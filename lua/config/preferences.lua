@@ -127,6 +127,7 @@ opt.foldmethod            = 'marker'      -- folding using triple curly brackets
 opt.fillchars             = { eob = ' ' } -- remove end-of-file characters
 opt.ea                    = false         -- let rsltn handle window resizing
 opt.autochdir             = true          -- let vim automatically follow the buffer in directory
+vim.cmd('autocmd VimLeave * set guicursor=a:ver25-Cursor-blinkwait700-blinkon400-blinkoff250')
 
 --------------------------------------------------------------------------------
 
