@@ -87,37 +87,6 @@ return {
         end
     },
 
-    --------------------------- nvim-autopairs: pairing ----------------------------
-    {
-        'windwp/nvim-autopairs',
-
-        -- trigger
-        event = 'InsertEnter',
-
-        config = function()
-
-            -- dependency (itself)
-            local npairs = require("nvim-autopairs")
-            local Rule = require('nvim-autopairs.rule')
-            local cond = require('nvim-autopairs.conds')
-
-            -- setup
-            npairs.setup({
-                map_cr = false
-            })
-
-            -- latex rule
-            npairs.add_rule(
-              Rule("$", "$",{"tex", "latex"})
-                :with_pair(cond.not_before_regex("\\", 3))
-            )
-
-            -- remove ' rule for tex and md
-            npairs.remove_rule("'")
-            npairs.remove_rule('"')
-        end
-    },
-
     ------------------- nvim-cmp: autocompletion --------------------
     {
         'hrsh7th/nvim-cmp',
