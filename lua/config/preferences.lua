@@ -43,7 +43,7 @@ prefs.dictionary_files = {
 ----------------------------- vimtex configuration -----------------------------
 
 -- where to look for PDF viewer
-glb.vimtex_view_sioyek_exe         = '/home/roshan/Applications/Sioyek.AppImage'
+glb.vimtex_view_sioyek_exe         = '/home/candice/usr/bin/sioyek'
 -- type of PDF viewer
 glb.vimtex_view_method             = 'sioyek'
 -- warnings to ignore
