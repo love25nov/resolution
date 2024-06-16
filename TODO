@@ -1,0 +1,1 @@
+- call latexfmt#FormatLines("n")
