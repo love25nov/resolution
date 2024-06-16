@@ -19,6 +19,16 @@ PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 return {
 
+    {
+        'engeljh/vim-latexfmt',
+
+        config = function()
+            vim.g.latexfmt_no_join_any = { '%', '\\begin', '\\end', '\\vspace', '\\noindent', '\\caption' }
+            vim.g.latexfmt_no_join_prev = { '\\item', '\\label' }
+            vim.g.latexfmt_verbatim_envs = { '\\align' }
+        end,
+    },
+
     --------------------- vimtex: the best tex plugin there is ---------------------
 
     {
